@@ -49,20 +49,23 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#howtouse",
+    title: "Clients",
+    url: "#clients",
   },
   {
     id: "3",
-    title: "Contact Us",
+    title: "Career",
+    url: "#career",
+  },
+  {
+    id: "4",
+    title: "ContactUs",
     url: "#contactus",
   },
-
   {
     id: "5",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
+    title: "Blog",
+    url: "#blog",
   },
 ];
 

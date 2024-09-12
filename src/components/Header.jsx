@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-
+import "./Header.css";
 import { byte } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
@@ -37,7 +37,7 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <img src={byte} width={190} height={40} alt="Brainwave" />
+          <img src={byte} width={150} height={30} alt="Brainwave" />
         </a>
 
         <nav
@@ -66,16 +66,17 @@ const Header = () => {
 
           <HamburgerMenu />
         </nav>
-
-        {/* <a
-          href="#signup"
-          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
-        >
-          New account
-        </a> */}
-        <Button className="hidden lg:flex" href="#login">
-          Sign in
-        </Button>
+        {/* md:hidden sm:hidden */}
+        <div class="sm:hidden flip-card flex items-center justify-center">
+          <div class="flip-card-inner ">
+            <div class="flip-card-front font-semibold">
+              <a>PHONE</a>
+            </div>
+            <div class="flip-card-back font-semibold">
+              <a> 01886261099</a>
+            </div>
+          </div>
+        </div>
 
         <Button
           className="ml-auto lg:hidden"
